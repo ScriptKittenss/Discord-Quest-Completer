@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: Consolas, "SFMono-Regular", Menlo, Monaco, monospace;
+
+  --color-brand-400: #f05267;
+  --color-brand-500: #e12d46;
+  --color-brand-600: #c91f37;
+
+  --color-surface-bg: #0f1013;
+  --color-surface-card: #16181d;
+  --color-surface-inner: #1e2027;
+  --color-surface-hover: #262932;
+  --color-surface-border: #292c35;
+}
+
+html,
+body {
+  font-family: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #0f1013;
+  color: #eceef2;
+  overflow-x: hidden;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Completely remove and hide all scrollbars across all elements */
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+*::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+  background: transparent !important;
+}
+
+/* Selection */
+::selection {
+  background: #e12d46;
+  color: #ffffff;
+}
