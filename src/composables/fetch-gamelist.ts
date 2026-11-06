@@ -99,15 +99,18 @@ export function useFetchGameList() {
     }
 
     // Background refresh: swap in the fresh mirror list when it arrives.
+    // Best-effort only — the bundled list is already loaded by now, so a
+    // mirror failure is not an error: log it as a warning and keep the
+    // bundled list (e.g. when the PC's network/VPN can't reach the mirror).
     async function refreshFromMirror() {
         try {
             await executeGH();
         } catch {
-            addLog('error', 'Error executing fetch for GitHub mirror.');
+            addLog('warning', 'GitHub mirror refresh failed, keeping bundled game list.');
             return;
         }
         if (errorGH.value) {
-            addLog('error', 'Error fetching game list from GitHub mirror');
+            addLog('warning', 'GitHub mirror refresh failed, keeping bundled game list.');
             return;
         }
         if (gameListGHMirror.value && gameListGHMirror.value?.length > 0 && isValidGameList(gameListGHMirror.value)) {
