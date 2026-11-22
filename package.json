@@ -1,7 +1,7 @@
 {
   "name": "script-kittens-quest-completer",
   "private": true,
-  "version": "25.10.7",
+  "version": "2026.11.06",
   "type": "module",
   "scripts": {
     "dev": "vite",
