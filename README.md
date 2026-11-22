@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/platform-windows-blue?style=flat-square" alt="Windows" />
   <img src="https://img.shields.io/badge/built_with-Tauri_v2_+_Vue_3-orange?style=flat-square" alt="Tauri + Vue" />
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="MIT" />
-  <img src="https://img.shields.io/badge/release-v25.10.7-crimson?style=flat-square" alt="Release" />
+  <img src="https://img.shields.io/badge/release-2026.11.06-crimson?style=flat-square" alt="Release" />
 </p>
 
 <p align="center">
